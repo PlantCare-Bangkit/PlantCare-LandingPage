@@ -83,14 +83,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0.2rem;
     background-color: #000000;
     color: #FFFFFF;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    width: 100%;
+    width: 40%;
     text-align: center;
     gap: 20px;
 }
