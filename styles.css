@@ -12,7 +12,7 @@ body {
 
 /* Header styles */
 header {
-    padding: 2.5rem 5rem 4rem 6em;
+    padding: 2.5rem 5rem 3rem 6em;
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ nav img {
     background-color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    width: 55%;
+    position: relative;
 }
 
 h1 {
@@ -97,14 +97,9 @@ h1 {
 }
 
 /* Feature 1 image section */
-.feature1-image {
-    flex: 1;
-    position: relative;
-}
-
 .feature1-image > img {
     width: 100%;
-    max-width: 480px;
+    max-width: 1280px;
     border-radius: 12px;
 }
 
@@ -119,13 +114,12 @@ h1 {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
+    width: 100%;
 }
-
-
 
 .group-image img {
     width: 100%;
-    max-width: 200px;
+    height: auto;
 }
 
 .group-image p {
@@ -178,7 +172,7 @@ h1 {
 
 .feature2-image {
     flex: 1;
-    max-width: 50%;
+    width: 100%;
     background-color: #E9F1EE;
     border-radius: 24px;
     padding: 2rem 2rem 0 2rem;
@@ -193,7 +187,62 @@ h1 {
     height: auto;
 }
 
+/* Feature 3 section */
+.feature3-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 2rem;
+}
 
+.feature3-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2D6A4F;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.feature3-text p {
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.feature3-image {
+    flex: 1;
+    max-width: 50%;
+    background-color: #E9F1EE;
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.feature3-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 32px;
+}
+
+.feature3-image::after {
+    content: '×';
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Footer styles */
 footer {
