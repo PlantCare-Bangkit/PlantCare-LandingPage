@@ -55,7 +55,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-
 .group-code, .group-cloud {
     display: flex;
     flex-direction: column;
@@ -103,7 +102,7 @@ h1 {
 .feature1-image > img {
     width: 100%;
     max-width: 1280px;
-    border-radius: 12px;
+    border-radius: 1.5rem;
 }
 
 .group-image {
@@ -115,9 +114,8 @@ h1 {
 .group-image div {
     background-color: #FFFFFF;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 1.5rem;
     text-align: center;
-    width: 100%;
 }
 
 .group-image img {
@@ -229,7 +227,6 @@ h1 {
     height: auto;
 }
 
-
 /* Feature 4 section */
 .feature4-text {
     flex: 1;
@@ -302,7 +299,7 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1276px) {
     .content section {
         flex-direction: column;
     }
@@ -313,5 +310,73 @@ footer {
 
     .group-image {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 416px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .content {
+        padding: 0rem;
+    }
+
+    .group-code, .group-cloud {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .group-image div {
+        padding: 0;
+    }
+
+    .feature2-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    section:nth-of-type(3) {
+        flex-direction: column-reverse;
+    }
+
+    .feature3-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .feature3-image {
+        max-width: 100%;
+    }
+
+    .feature4-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .feature4-text h1, .feature4-text p {
+        text-align: center;
+    }
+
+    .feature4-image {
+        max-width: 100%;
     }
 }
