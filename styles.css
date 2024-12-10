@@ -299,7 +299,7 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 1276px) {
+@media (max-width: 1080px) {
     .content section {
         flex-direction: column;
     }
